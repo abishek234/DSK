@@ -28,8 +28,7 @@
     });
 
     // Modal Video
-       // Modal Video
-       $(document).ready(function () {
+    $(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
@@ -44,33 +43,8 @@
             $("#video").attr('src', $videoSrc);
         })
     });
-
-    // // Facts counter
-    // function counterUp(element, target) {
-    //     var current = parseInt(element.text().replace(/,/g, ''));
-    //     var targetValue = target;
-    //     var suffix = '';
-    //     if (target.includes('k')) {
-    //         targetValue = parseFloat(target.replace('k', '')) * 1000;
-    //         suffix = 'k';
-    //     } else if (target.includes('m')) {
-    //         targetValue = parseFloat(target.replace('m', '')) * 1000000;
-    //         suffix = 'm';
-    //     }
-    //     var increment = (targetValue - current) / 100;
-    //     element.text(Math.ceil(current + increment) + suffix);
-    //     if (current < targetValue) {
-    //         setTimeout(function() {
-    //             counterUp(element, target);
-    //         }, 10);
-    //     }
-    // }
-
-    // $('[data-toggle="counter-up"]').each(function() {
-    //     var element = $(this);
-    //     var target = element.text();
-    //     counterUp(element, target);
-    // });
+    
+    
 
     function counterUp(element, target) {
         var current = parseInt(element.text().replace(/,/g, ''));
@@ -101,6 +75,6 @@
         var target = element.text();
         counterUp(element, target);
     });
-
+   
 
 })(jQuery);
